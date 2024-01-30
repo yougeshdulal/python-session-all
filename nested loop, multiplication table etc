@@ -1,0 +1,124 @@
+#WAP
+# 1 to generate multiplication table from 1 to 10 
+# 2 ask user for the range of table
+# 3 check whether entered number is odd or even number
+# 4 find the largest number among entered two numbers
+# 5 find the largest number among entered three numbers
+# 6 display 1 to 50 using loop 1 2 3 4 5 ... 50
+# 7 display even numbers that lies in the range of 1 to 50
+# 8 display odd numbers that lies in the range of 1 to 50
+#9 calculate the sum of even numbers in the range of 1 to 10
+#10 calculate the sum of odd numbers in the range of 1 to 10
+#11 check which sum is greater, odd or even number sum?
+
+mark1 = input("Enter the mark1 ")
+mark1 = float(mark1)
+mark2 = float(input("Enter the mark2 "))
+total = mark1 + mark2
+per = total/2
+print("Scored percentage is", per)
+if per >= 32:
+    print("Passed")
+else:
+    print("Try Again!")
+
+######
+i = 1
+while i <= 3:
+    print("Hello",i)
+    i = i + 1
+
+
+########
+i = 1
+while i <= 5:
+    print("\t\tStudent number",i)
+    mark1 = input("Enter the mark1 ")
+    mark1 = float(mark1)
+    mark2 = float(input("Enter the mark2 "))
+    total = mark1 + mark2
+    per = total/2
+    print("Scored percentage is", per)
+    if per >= 32:
+        print("Passed")
+    else:
+        print("Try Again!")
+    i = i + 1
+
+
+
+#########
+i = 1
+while i <= 10:
+    value = 5 * i
+    print(5, "*", i, "=", value)
+    i = i + 1
+
+
+
+###########check 
+i = 1
+j = 1
+while j <= 3:
+    num = int(input("Kasko table chaiyo? "))
+    while i <= 10:
+        value = num * i
+        print(num, "*", i, "=", value)
+        i = i + 1
+    j = j+1
+
+
+
+
+
+i = 1
+j = 1
+while i <= 3: #i=1 1<=3 cha   2<=3 cha? cha
+    print("i is here", i) #i is here 1 i is here 2
+    while j <= 2:  #j = 1 1 <2 cha    2 == 2 cha?  3<=2 cha? chaina
+        print("\t\tj is here", j)  #j is here 1   j is here 2
+        j = j+1    #1+1 j =2 2+1 = 3   j = 3
+    i = i + 1   #i= 1+1 = 2
+
+
+
+i = 1
+#i ko value 1 cha
+# aba loop ma set vako condition check huncha
+#milyo vane loop bhitra jancha natra jadaina
+#yo loop le ke vaneko ho?
+#jaba samma i ko value less than or equals 3 rahancha tyo bela samma chala
+#now it tests 1<=3? which is true so will enter the body of loop
+#NOTE: i =1
+while i <= 3:
+    j = 1 #j ko value 1 set vako cha
+    #hareko choti loop ko suruwat huda j=1 hune raicha
+    #NOTE: j =1
+    print("i is here", i)
+    # i is here 1 print huncha
+    #aba next line ma program jancha
+    #simple print statement vako vaye hello jello ke ke authyo
+    #in this case we have another loop inside our loop
+    #question: loop ko feature ke ho? namilda samma chalirakhne
+    #j = 1 cha 1<=2? test huncha true  NOTE: j=1
+    while j <= 2:  
+        print("\t\tj is here", j)  #j is here 1
+        j = j+1    #j = 1+1=2  j = 3
+    i = i + 1   #i= 1+1 = 2
+
+
+
+
+###########
+i = 1
+while i <= 3:
+    j = 1
+    print("i is here",i)
+    while j <= 2:
+        k = 1
+        print("\t\tj is here", j)
+        while k <= 2:
+            print("\t\t\tk is here", k)
+            k = k + 1
+        j = j+1
+    i = i + 1

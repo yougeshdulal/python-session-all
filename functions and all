@@ -1,0 +1,170 @@
+def summation(a, b):
+    c = a + b
+    print(f"sum is {c}")
+    
+
+summation(22,33)
+
+
+def summation(a, b):
+    c = a + b
+    return c
+
+
+res = summation(22,33)
+print(f"Sum is {res}")
+print(f"Sum is {summation(22, 33)}")
+
+
+
+
+def demo(x):
+    a = 333 + x
+    return a
+
+
+res = demo(22)
+if res > 100:
+    print(">100")
+	
+	
+	
+def summation(a, b):
+    c = a + b
+    return c
+
+
+res = summation(22,33)
+print(f"Sum is {res}")
+print(f"Sum is {summation(22, 33)}")
+
+# yo kam ghar gayera gara   def kunaikam():
+# yo kam ghar gayera esari gara def kunaikam(a,b):
+# yo kam ghar gayera gara ani malai dekhau def kunaikam():    return 222
+# yo kam ghar gayera esari gara ani dekhau def kunaikam(a,b): return  c
+
+
+
+def summation(a, b):
+    c = a + b
+    return c
+
+
+# res = summation(22,33)
+# print(f"Sum is {res}")
+# print(f"Sum is {summation(22, 33)}")
+
+assert summation(2,3) == 5,'There seems to be some issues\n2 and 3 should be 5'
+print("Everything appears to be good")
+
+
+
+
+
+def summation(a, b):
+    c = a + b + 3
+    return c
+
+
+assert summation(2,3) == 5,'There seems to be some issues\n2 and 3 should be 5'
+print("Everything appears to be good")
+
+
+
+
+def list_test(some_list):
+    print(some_list)
+
+
+list_test([2, 5, 9, 8, 7, 99])
+
+
+
+
+def list_test(some_list):
+    # print(some_list)
+    return some_list
+
+
+check_info = list_test([2, 5, 9, 8, 7, 99])
+print(check_info)
+
+
+
+def list_test(some_list):
+    # print(some_list)
+    return some_list
+
+
+# check_info = list_test([2, 5, 9, 8, 7, 99])
+# print(check_info)
+
+
+assert list_test([range(0,100)]) == [range(0,100)],"Issue is there"
+print("Everything is alright")
+
+
+
+def list_test(some_list):
+    # print(some_list)
+    some_list.sort(reverse=True)
+    return some_list
+
+
+assert list_test([1,2,3]) == [3,2,1],"Issue is there"
+print("Everything is alright")
+
+
+
+def list_test(some_list):
+    # print(some_list)
+    # print(max(some_list))
+    max_number = some_list[0]
+    for i in some_list:
+        if max_number < i:
+            max_number = i
+    print("Largest number is",max_number)
+
+
+list_test([1, 2, 3, 7, 99, 5])
+# 1 < 2
+#     maxnumber = 2
+#     2<3?
+#         maxnumber = 3
+#             3<7?
+# maxnumber = 7
+# 7<99?
+# maxnumber =99
+# 99<5?
+#     NO
+
+
+def list_test(some_list):
+    # print(some_list)
+    # print(max(some_list))
+    max_number = some_list[0]
+    for i in some_list:
+        if max_number < i:
+            max_number = i
+            print("Largest number is",max_number)
+
+
+list_test([1, 2, 3, 7, 99, 5])
+# 1 < 2
+#     maxnumber = 2
+#     2<3?
+#         maxnumber = 3
+#             3<7?
+# maxnumber = 7
+# 7<99?
+# maxnumber =99
+# 99<5?
+#     NO
+
+
+
+def list_test(list1):
+    print(list1)
+
+list_test([22,55,66,33,44])
+

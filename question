@@ -1,0 +1,11 @@
+#How to input 'list' in dictionary from ?
+d1={
+    'name': input("Enter Your name : "),
+    'age': int(input("Enter Your age :")),
+    'mark': float(input("Enter mark here : ")),
+    'address': [],
+    'enter address': input("Enter Your address : "),
+    address.append(enter address)
+    
+}
+print(d1['address'])

@@ -1,0 +1,147 @@
+l1 = ["ram", "shyam", "hari"]
+print(l1[0])
+print(l1[0][0])
+print(l1[0][1])
+print(l1[0][2])
+
+
+
+def addition():
+    a = int(input("Enter first number "))
+    b = int(input("Enter second number "))
+    c = a + b
+    print(f"Sum is {c}")
+
+
+addition()
+
+
+def addition():
+    a = int(input("Enter first number "))
+    b = int(input("Enter second number "))
+    c = a + b
+    print(f"Sum is {c}")
+
+
+def sub():
+    a = int(input("Enter first number "))
+    b = int(input("Enter second number "))
+    c = a - b
+    print("Difference is",c)
+
+
+addition()
+sub()
+
+
+
+a = 222
+b = 333
+
+
+def addition():
+    # a = int(input("Enter first number "))
+    # b = int(input("Enter second number "))
+    c = a + b
+    print(f"Sum is {c}")
+
+
+def sub():
+    # a = int(input("Enter first number "))
+    # b = int(input("Enter second number "))
+    c = a - b
+    print("Difference is",c)
+
+
+addition()
+sub()
+
+
+
+a = 222
+b = 333
+
+
+def addition():
+    a = int(input("Enter first number "))
+    b = int(input("Enter second number "))
+    c = a + b
+    print(f"Sum is {c}")
+
+
+def sub():
+    a = int(input("Enter first number "))
+    b = int(input("Enter second number "))
+    c = a - b
+    print("Difference is",c)
+
+
+addition()
+sub()
+
+
+
+
+
+#### main.py
+import sum_handler
+import sub_handler
+
+sum_handler.addition()
+sub_handler.sub()
+
+
+
+####sum_handler.py
+def addition():
+    a = int(input("Enter first number "))
+    b = int(input("Enter second number "))
+    c = a + b
+    print(f"Sum is {c}")
+
+
+###sub_handler.py
+def sub():
+    a = int(input("Enter first number "))
+    b = int(input("Enter second number "))
+    c = a - b
+    print("Difference is", c)
+
+
+
+####
+# import test as t #alias
+from test import add
+add()
+
+#test.py
+def add():
+    a = int(input("Enter first number "))
+    b = int(input("Enter second number "))
+    c = a + b
+    print(f"Sum is {c}")
+	
+	
+	
+	
+list1 = ["ram", 'shyam', 'hari']
+print(list1)
+list1.append('sita')
+list1.insert(2,'nisha')
+print(list1)
+list1.sort()
+print(list1)
+list1.sort(reverse=True)
+print(list1)
+print(len(list1))
+print(list1[2])
+
+
+
+
+n = int(input("kati wota naam? "))
+list1 = []
+for i in range(n):
+    name = input("Enter name ")
+    list1.append(name)
+print(list1)

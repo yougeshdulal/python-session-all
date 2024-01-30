@@ -1,0 +1,118 @@
+t1 = (['apple', 'banana', 'orange'], 'monday', 33)
+    # 0
+    #     0   1    2
+print(type(t1))
+print(t1)
+t1[0][0]='mango'
+print(t1)
+print(t1[0][0])
+print(t1[0][1])
+
+
+t1 = (['appale', 'banana', 'orange'], 'monday', 33)
+print(type(t1))
+print(t1)
+intermediate = t1[0][0].replace('a','e')
+t1[0][0] = intermediate
+print(t1[0][0])
+print(t1)
+
+
+
+l1 = []
+n = int(input("Kati jana ko detail rakhne? "))
+for i in range(n):
+    print(i)
+	
+	
+# l1 = [['ram', 22, 75],
+#       ['shyam', 21, 77],
+#       ['hari', 23, 71]]
+# print(l1)
+# l1.append(['sita',19,91])
+# print(l1)
+l1 = []
+n = int(input("Kati jana ko detail rakhne? "))
+for i in range(n):
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    mark = float(input("Enter your mark: "))
+    l1.append(name)
+    l1.append(age)
+    l1.append(mark)
+print(l1)
+
+
+
+
+####check
+l1 = []
+new_list = []
+n = int(input("Kati jana ko detail rakhne? "))
+for i in range(n):
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    mark = float(input("Enter your mark: "))
+    new_list.append(name)
+    new_list.append(age)
+    new_list.append(mark)
+    l1.append(new_list)
+print(l1)
+
+
+
+l1 = []  #euta blank list banako pachi use garna
+# l1 = list()
+n = int(input("Kati jana ko detail rakhne? ")) #user sanga element number mageko
+let's say user le 2 rakhyo re
+n = 2
+for i in range(n):
+for i in range(2):
+    range aba 0 and 1 ma chalcha
+    new_list = [] blank narakhda ke huncha?
+    narakhda sabai detail lincha refer to the program in the file for same
+    i ko value 0 huda:   i = 1
+    name = input("Enter your name: ") ram     shyam
+    age = int(input("Enter your age: ")) 22    33
+    mark = float(input("Enter your mark: ")) 77   88
+    new_list ma ram 22 and 77 lai add garyo 
+    new_list ma shyam 33 and 88 lai add garyo 
+    new_list.append(name) 
+    new_list.append(age)
+    new_list.append(mark)
+    suru ma jaba i = 1 cha, tyo bela aba
+    next() ma jaba i = 2 cha, tyo bela aba
+    new_list ma ['ram',22, 77] cha
+        when i is 2 new_list ma ['shyam',33, 88] cha
+    uslai l1 vanne blank list ma add garne aba
+    l1.append(new_list)
+print(l1)
+
+
+
+
+str1 = 'this is string'
+str2 = "yo pani string ho"
+str3 = '''yo pani string nai raicha'''
+print(type(str1))
+print(type(str2))
+print(type(str3))
+
+# str1 = 'I saw her in my dreams. There's something exciting about her'
+str1 = '''I saw her in my dreams. There's something exciting about her. She said,"It's good time to be alive!"'''
+print(str1)
+
+
+# str1 = 'I saw her in my dreams. There's something exciting about her'
+str1 = '''I saw her in my dreams.\n\tThere's something exciting about her.\n\tShe said,"It's good time to be alive!"'''
+print(str1)
+
+
+comp_location =r"c:\\users\\admin\\rshan"
+print(comp_location)
+print(f"{comp_location}")
+
+
+
+
+

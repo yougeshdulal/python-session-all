@@ -1,0 +1,122 @@
+num1 = input("Enter first number ")
+print("first number is", num1)
+
+
+num1 = input("Enter first number ")
+print("first number is", num1)
+num2 = input("Enter second number ")
+print("Second number is", num2)
+
+
+num1 = input("Enter first number ")
+num2 = input("Enter second number ")
+res = num1 + num2
+print("first number is", num1)
+print("Second number is", num2)
+print("Sum is", res)
+
+
+num1 = input("Enter first number ")
+num2 = input("Enter second number ")
+res = int(num1) + int(num2)
+print("first number is", num1)
+print("Second number is", num2)
+print("Sum is", res)
+
+
+
+num1 = int(input("Enter first number "))
+num2 = int(input("Enter second number "))
+res = num1 + num2
+print("first number is", num1)
+print("Second number is", num2)
+print("Sum is", res)
+
+
+
+
+num1 = int(input("Enter first number "))
+num2 = int(input("Enter second number "))
+num3 = int(input("Enter third number "))
+res = num1 + num2 + num3
+print("first number is", num1)
+print("Second number is", num2)
+print("Third number is", num3)
+print("Sum is", res)
+
+
+
+
+scenario:
+ke cha aja ko plan?
+    yedi free time vayo vane movie herchu 
+if esto vayo vane:
+    movie herchu 
+bank
+    security check
+        token   
+            wait
+        palo ayo 
+            manche pugyo
+                cheque
+                    
+temperature = float(input("Enter today's temperature: "))
+print("Entered temperature is", temperature)
+if temperature > 30:
+    print("It's a hot day!")
+    
+
+
+temperature = float(input("Enter today's temperature: "))
+print("Entered temperature is", temperature)
+if temperature > 30:
+    print("It's a hot day!")
+if temperature < 30:
+    print("It's not a hot day!")
+    
+
+
+temperature = float(input("Enter today's temperature: "))
+print("Entered temperature is", temperature)
+if temperature > 30:
+    print("It's a hot day!")
+if temperature > 40:
+    print("It's maha garmi!")
+
+
+age = int(input("Enter your age: "))
+print("Entered age is", age)
+if age >= 18:
+    print("Eligible for voting")
+    print("Future is there at your access")
+    print("This is inside if statement")
+print("This is the last part")
+
+
+
+age = int(input("Enter your age: "))
+print("Entered age is", age)
+if age >= 18:
+    print("Eligible for voting")
+else:
+    print("Not eligible for voting")
+
+
+
+age = int(input("Enter your age: "))
+print("Entered age is", age)
+if age >= 18:
+    print("Eligible for voting")
+    if age >= 22:
+        print("Eligible for bihe")
+    else:
+        print("Not eligible for bihe")
+else:
+    print("Not eligible for voting")
+
+
+num1 = int(input("Enter any number "))
+if num1 > 0:
+    print("This is +ve number")
+else:
+    print("This is -ve number")

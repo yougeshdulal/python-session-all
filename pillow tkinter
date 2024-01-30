@@ -1,0 +1,207 @@
+import tkinter as tk
+
+master = tk.Tk()
+master.mainloop()
+
+
+import tkinter as tk
+
+master = tk.Tk()
+master.title("Random Tests")
+master.mainloop()
+
+
+import tkinter as tk
+
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Random Tests")
+master.config(bg='skyblue')
+master.mainloop()
+
+
+import tkinter as tk
+from PIL import  Image, ImageTk
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Random Tests")
+master.iconphoto(False,tk.PhotoImage(file='nat.png'))
+master.config(bg='skyblue')
+
+image = Image.open("differences.png")
+canvas = tk.Canvas(master,height=500,width=500,bg='grey')
+canvas.pack()
+image = ImageTk.PhotoImage(image)
+canvas.create_image(0,0,image=image,anchor = 'nw')
+master.mainloop()
+
+
+import tkinter as tk
+from PIL import  Image, ImageTk
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Random Tests")
+master.iconphoto(False,tk.PhotoImage(file='nat.png'))
+master.config(bg='skyblue')
+
+image = Image.open("differences.png")
+canvas = tk.Canvas(master,height=500,width=500,bg='grey')
+canvas.pack()
+image = ImageTk.PhotoImage(image)
+canvas.create_image(10,0,image=image,anchor = 'nw')
+master.mainloop()
+
+
+
+import tkinter as tk
+from PIL import  Image, ImageTk, ImageFilter
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Random Tests")
+master.iconphoto(False,tk.PhotoImage(file='nat.png'))
+master.config(bg='skyblue')
+
+image = Image.open("natureLady.png")
+image = image.filter(ImageFilter.BLUR)
+canvas = tk.Canvas(master,height=500,width=500,bg='grey')
+canvas.pack()
+image = ImageTk.PhotoImage(image)
+canvas.config(height=image.height(),width=image.width())
+canvas.create_image(0,0,image=image,anchor = 'nw')
+master.mainloop()
+
+
+import tkinter as tk
+from PIL import  Image, ImageTk, ImageFilter
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Random Tests")
+master.iconphoto(False,tk.PhotoImage(file='nat.png'))
+master.config(bg='skyblue')
+
+image = Image.open("natureLady.png")
+# image = image.filter(ImageFilter.BLUR)
+image = image.filter(ImageFilter.EMBOSS)
+canvas = tk.Canvas(master,height=500,width=500,bg='grey')
+canvas.pack()
+image = ImageTk.PhotoImage(image)
+canvas.config(height=image.height(),width=image.width())
+canvas.create_image(0,0,image=image,anchor = 'nw')
+master.mainloop()
+
+
+import tkinter as tk
+from PIL import  Image, ImageTk, ImageFilter,ImageOps
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Random Tests")
+master.iconphoto(False,tk.PhotoImage(file='nat.png'))
+master.config(bg='skyblue')
+
+# image = Image.open("natureLady.png")
+image = Image.open("differences.png")
+# image = image.filter(ImageFilter.BLUR)
+# image = image.filter(ImageFilter.EMBOSS)
+# image = image.filter(ImageFilter.SMOOTH)
+# image = image.filter(ImageFilter.SHARPEN)
+image = ImageOps.grayscale(image)
+canvas = tk.Canvas(master,height=500,width=500,bg='grey')
+canvas.pack()
+image = ImageTk.PhotoImage(image)
+canvas.config(height=image.height(),width=image.width())
+canvas.create_image(0,0,image=image,anchor = 'nw')
+master.mainloop()
+
+
+
+import tkinter as tk
+from PIL import  Image, ImageTk, ImageFilter,ImageOps
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Random Tests")
+master.iconphoto(False,tk.PhotoImage(file='nat.png'))
+master.config(bg='skyblue')
+
+left_frame = tk.Frame(master,width=200,height=200,bg='red')
+left_frame.pack(side='left',fill='y')
+# btn1 = tk.Button(master,text='Click Me!')
+btn1 = tk.Button(left_frame,text='Click Me!')
+btn1.pack(pady=15)
+
+# image = Image.open("natureLady.png")
+image = Image.open("differences.png")
+# image = image.filter(ImageFilter.BLUR)
+# image = image.filter(ImageFilter.EMBOSS)
+# image = image.filter(ImageFilter.SMOOTH)
+# image = image.filter(ImageFilter.SHARPEN)
+image = ImageOps.grayscale(image)
+canvas = tk.Canvas(master,height=500,width=500,bg='grey')
+canvas.pack()
+image = ImageTk.PhotoImage(image)
+canvas.config(height=image.height(),width=image.width())
+canvas.create_image(0,0,image=image,anchor = 'nw')
+master.mainloop()
+
+
+
+import tkinter as tk
+from PIL import  Image, ImageTk, ImageFilter,ImageOps,ImageEnhance
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Random Tests")
+master.iconphoto(False,tk.PhotoImage(file='nat.png'))
+master.config(bg='skyblue')
+
+left_frame = tk.Frame(master,width=200,height=200,bg='red')
+left_frame.pack(side='left',fill='y')
+# btn1 = tk.Button(master,text='Click Me!')
+btn1 = tk.Button(left_frame,text='Click Me!')
+btn1.pack(pady=15)
+
+# image = Image.open("natureLady.png")
+image = Image.open("natureLady.png")
+enhancer = ImageEnhance.Brightness(image)
+enhancer.enhance(0.5).show()
+# image = image.filter(ImageFilter.BLUR)
+# image = image.filter(ImageFilter.EMBOSS)
+# image = image.filter(ImageFilter.SMOOTH)
+# image = image.filter(ImageFilter.SHARPEN)
+# image = ImageOps.grayscale(image)
+canvas = tk.Canvas(master,height=500,width=500,bg='grey')
+canvas.pack()
+image = ImageTk.PhotoImage(image)
+# canvas.config(height=image.height(),width=image.width())
+# canvas.create_image(0,0,image=image,anchor = 'nw')
+master.mainloop()
+
+
+import tkinter as tk
+from PIL import  Image, ImageTk, ImageFilter,ImageOps,ImageEnhance
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Random Tests")
+master.iconphoto(False,tk.PhotoImage(file='nat.png'))
+master.config(bg='skyblue')
+
+left_frame = tk.Frame(master,width=200,height=200,bg='red')
+left_frame.pack(side='left',fill='y')
+# btn1 = tk.Button(master,text='Click Me!')
+btn1 = tk.Button(left_frame,text='Click Me!')
+btn1.pack(pady=15)
+
+# image = Image.open("natureLady.png")
+image = Image.open("natureLady.png")
+enhancer = ImageEnhance.Brightness(image)
+# enhancer.enhance(1).show()
+enhancer.enhance(6).show()
+# image = image.filter(ImageFilter.BLUR)
+# image = image.filter(ImageFilter.EMBOSS)
+# image = image.filter(ImageFilter.SMOOTH)
+# image = image.filter(ImageFilter.SHARPEN)
+# image = ImageOps.grayscale(image)
+canvas = tk.Canvas(master,height=500,width=500,bg='grey')
+canvas.pack()
+image = ImageTk.PhotoImage(image)
+# canvas.config(height=image.height(),width=image.width())
+# canvas.create_image(0,0,image=image,anchor = 'nw')
+master.mainloop()

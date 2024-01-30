@@ -1,0 +1,145 @@
+#prg1
+pant = 2200
+shirt = 3300
+print("pant costs", pant, end='\n')
+print("Shirt costs", shirt)
+
+#prg2
+pant = 2200
+shirt = 3300
+print("pant costs", pant, end='')
+print("Shirt costs", shirt)
+
+print(2022, 3, 4, sep='-')
+print(2055, 2, 14, sep='/')
+
+
+
+ticket = 500
+popcorn = 300
+drinks = 150
+total = ticket + popcorn + drinks
+print("Total is",total)
+
+
+
+name = input()
+print("name is", name)
+
+
+name = input("Enter your name ")
+print("name is", name)
+
+
+
+num = 10
+print(num)
+print(type(num))
+
+
+num = 10.5
+print(num)
+print(type(num))
+
+
+
+
+num = "rshan"
+print(num)
+print(type(num))
+
+
+
+num1 = 10
+num2 = 20
+result = num1 + num2
+print(result)
+print(type(result))
+
+
+num1 = 10
+num2 = 20.5
+result = num1 + num2
+print(result)
+print(type(result))
+
+
+
+num1 = "10"
+num2 = "20.5"
+result = num1 + num2
+print(result)
+print(type(result))
+
+
+##############
+num1 = input("Enter any number: ")
+print("number here is", num1)
+
+
+num1 = 33
+num2 = 44
+print(num1 + num2)
+
+
+
+#check 
+
+
+num1 = input("Enter any number: ")
+print(type(num1))
+num2 = 44
+print(num1 + num2)
+
+
+
+
+num1 = input("Enter any number ")
+print(type(num1))
+num1 = int(num1)
+num2 = num1 + 10
+print("New number is", num2)
+
+
+
+
+a = 22
+print("22 huda memory", id(a))
+print("a initially is",a)
+a = 33
+print("33 huda memory", id(a))
+print("a in mid is",a)
+a = 44
+print("44 huda memory", id(a))
+print("a at end is",a)
+
+
+
+
+
+#########################
+user input lina input() use huncha
+prompt garna you need to populate the contents
+input("Enter your name ")
+input le string return garcha
+type check garna 
+type(name) esto garne
+id check garna id(name)
+guffgaff:
+    22 lai enter garyo re using input function
+yo ayeko information jun cha that is treated as string 
+22 ma malai 10 add garu cha re
+    result = 22 + 10
+yo bela mandaina
+kina?
+we are trying to add string and int
+duitai strin vako vaye hunthyo?
+    result = 22 + "ke ke jati"
+yeah
+that will be concatination
+but this is not what is needed
+number ma lagum 22 lai
+how?
+    typecast garne 
+num1 = int(num1)
+

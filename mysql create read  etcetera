@@ -1,0 +1,45 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(host="localhost",user="root",password="")
+if mydb:
+    print("Connected")
+else:
+    print("Connection error")
+
+
+import mysql.connector
+
+mydb = mysql.connector.connect(host="localhost",user="root",password="")
+if mydb:
+    print("Connected")
+else:
+    print("Connection error")
+#create database
+mycursor =  mydb.cursor()
+mycursor.execute("create database randomtest")
+
+
+
+import mysql.connector
+
+mydb = mysql.connector.connect(host="localhost",user="root",password="",db="randomtest")
+if mydb:
+    print("Connected")
+else:
+    print("Connection error")
+
+#create table
+# mycursor = mydb.cursor()
+# mycursor.execute("drop table if exists student")
+# mycursor.execute("create table student(name varchar(15),age int,mark float,address varchar(15))")
+#insert data
+mycursor = mydb.cursor()
+# mycursor.execute("insert into student(name,age,mark,address)values('ram',19,91,'pokhara')")
+# mydb.commit()
+mycursor.execute("select*from student")
+# data = mycursor.fetchone()
+data = mycursor.fetchall()
+print(data)
+mydb.close()
+
+

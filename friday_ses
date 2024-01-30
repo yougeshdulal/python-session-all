@@ -1,0 +1,88 @@
+# name age address mark
+student_detail = []
+# student_detail = list()
+n = int(input("Enter the total number of students: "))
+try:
+    n1 = 22/0
+    n = int(input("Enter the total number of students: "))
+    
+    # number ask the total number of students whose detail is needed
+# except ValueError as ex:
+#     print(ex)
+# except ZeroDivisionError as zde:
+#     print(zde)
+except Exception as ex:
+    print(ex)
+
+
+# name age address mark
+student_detail = []
+# student_detail = list()
+try:
+    n = int(input("Enter the total number of students: "))
+    for i in range(n):
+        temp_list = []
+        name = input("Enter name: ")
+        age = int(input("Enter age: "))
+        temp_list.append(name)
+        temp_list.append(age)
+        student_detail.append(temp_list)
+    print(student_detail)
+except Exception as ex:
+    print(ex.__doc__)
+
+
+
+# name age address mark
+student_detail = []
+# student_detail = list()
+j = 1
+while j <= 5:
+    try:
+        n = int(input("Enter the total number of students: "))
+        for i in range(n):
+            temp_list = []
+            name = input("Enter name: ")
+            age = int(input("Enter age: "))
+            temp_list.append(name)
+            temp_list.append(age)
+            student_detail.append(temp_list)
+        print(student_detail)
+        break
+    except Exception as ex:
+        j+=1
+        print(ex.__doc__)
+        if j == 5:
+            print("You are not sharp minded sorry!")
+        if j == 6:
+            print("Ab kehi hudaina!")
+
+
+
+def list_handler(n1:int)->None:
+    for i in range(n1):
+        temp_list = []
+        name = input("Enter name: ")
+        age = int(input("Enter age: "))
+        temp_list.append(name)
+        temp_list.append(age)
+        student_detail.append(temp_list)
+    print(student_detail)
+# name age address mark
+student_detail = []
+# student_detail = list()
+j = 1
+while j <= 5:
+    try:
+        n = int(input("Enter the total number of students: "))
+        list_handler(n)
+        break
+    except Exception as ex:
+        j+=1
+        print(ex.__doc__)
+        if j == 5:
+            print("You are not sharp minded sorry!")
+        if j == 6:
+            print("Ab kehi hudaina!")
+
+

@@ -1,0 +1,190 @@
+file handling
+steps:
+open the file 
+perform the operation
+close the file
+read 
+write 
+append
+
+# f = open("test.txt")
+# f.close()
+# print("This is remaining works!")
+
+exception handling mechanism
+
+try:
+    a = 22 / 0
+    print(a)
+except:
+    print("There is error")
+print("This is demo")
+
+
+try:
+    a = 22 / 0
+    print(a)
+except ZeroDivisionError:
+    print(f"There is error{ZeroDivisionError}")
+print("This is demo")
+
+
+
+try:
+    a = 22 / 0
+    print(a)
+except ZeroDivisionError as ze:
+    print(f"There is error {ze}")
+print("This is demo")
+
+
+
+try:
+    a = 22 / 0
+    # a = [22, 33, 55]
+    # print(a[5])
+except Exception as ex:
+    print(f"There is error {ex} {type(ex)} {type(ex).__name__}")
+print("This is demo")
+
+
+
+try:
+    a = 22 / 2
+    print(a)
+except Exception as ex:
+    print(f"There is error {ex}")
+print("This is demo")
+
+
+
+
+try:
+    a = 22 / 0
+    print(a)
+except Exception as ex:
+    print(f"There is error {ex}")
+else:
+    print("We are on next stuff")
+print("This is demo")
+
+
+try:
+    a = 22 / 2
+    print(a)
+except Exception as ex:
+    print(f"There is error {ex}")
+else:
+    print("We are on next stuff")
+print("This is demo")
+
+
+
+try:
+    a = 22 / 0
+    print(a)
+except Exception as ex:
+    print(f"There is exception {ex}")
+else:
+    print("We are on next stuff")
+finally:
+    print("This is try except block")
+print("This is demo")
+
+
+
+try:
+    a = 22 / 2
+    print(a)
+except Exception as ex:
+    print(f"There is exception {ex}")
+else:
+    print("We are on next stuff")
+finally:
+    print("This is try except block")
+print("This is demo")
+
+
+
+
+# try except else finally
+#     teef 
+# timi esari eklai farkiyeu 
+
+
+
+try:
+    f = open("test.txt")
+    f.close()
+except Exception as ex:
+    print(f"Error on file {ex}")
+print("This is remaining works!")
+
+
+try:
+    f = open("test.txt", 'r')
+    f.close()
+except Exception as ex:
+    print(f"Error on file {ex}")
+else:
+    print("Inside file")
+print("This is remaining works!")
+
+
+
+try:
+    f = open("test1.txt", 'r')
+    f.close()
+except Exception as ex:
+    print(f"Error on file {ex}")
+else:
+    print("Inside file")
+print("This is remaining works!")
+
+
+
+try:
+    f = open("test1.txt", 'a')
+    f.close()
+except Exception as ex:
+    print(f"Error on file {ex}")
+else:
+    print("Inside file")
+print("This is remaining works!")
+
+
+
+try:
+    f = open("test2.txt", 'x')
+    f.close()
+except Exception as ex:
+    print(f"Error on file {ex}")
+else:
+    print("Inside file")
+print("This is remaining works!")
+
+
+try:
+    f = open("test1.txt", 'r')
+    data = f.read()
+    print(data)
+    f.close()
+except Exception as ex:
+    print(f"Error on file {ex}")
+else:
+    print("Inside file")
+print("This is remaining works!")
+
+
+
+try:
+    f = open("test1.txt", 'r')
+    data = f.read()
+    print(data)
+    print(type(data))
+    f.close()
+except Exception as ex:
+    print(f"Error on file {ex}")
+else:
+    print("Inside file")
+print("This is remaining works!")

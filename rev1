@@ -1,0 +1,145 @@
+print("1234Hello World!ke cha khabar?", end=' ')
+print("This is test")
+
+a = 22
+print(a)
+print(type(a))
+
+
+a = 2.2
+print(a)
+print(type(a))
+
+
+a = '2.2'
+print(a)
+print(type(a))
+
+
+a = 22
+b = 33
+c = a + b
+print("Sum is", c)
+print("Sum of", a, " and ", b, " is ", c)
+print(f"Sum of {a} and {b} is {c}") #formatted string
+print(c)
+
+
+a = int(input("Pahilo number rakha: "))
+b = int(input("Doshro number rakha: "))
+print(type(a))
+print(type(b))
+c = a + b
+print(f"Sum of {a} and {b} is {c}") #formatted string
+
+print(c)
+
+
+
+a = int(input("Pahilo number rakha: "))
+b = int(input("Doshro number rakha: "))
+print(type(a))
+print(type(b))
+c = a + b
+print(f"Sum of {a} and {b} is {c}") #formatted string
+print(c)
+if c > 20:
+    print("Greater than 20")
+else:
+    print("Less than 20")
+
+
+
+
+
+temperature = float(input("Enter current temperature: "))
+print(temperature)
+if temperature > 30:
+    print("It's Very Hot Day!")
+else:
+    print("Normal Day!")
+
+
+
+temperature = float(input("Enter current temperature: "))
+print(temperature)
+if temperature > 30:
+    print("It's Very Hot Day!")
+elif temperature >= 25:
+    print("It's bit hot day!")
+else:
+    print("Normal Day!")
+
+
+i = 1
+while i <= 3:
+    temperature = float(input("Enter current temperature: "))
+    print(temperature)
+    if temperature > 30:
+        print("It's Very Hot Day!")
+    elif temperature >= 25:
+        print("It's bit hot day!")
+    else:
+        print("Normal Day!")
+    i = i + 1
+
+
+
+i = 1
+while i <= 3:
+    temperature = float(input("Enter current temperature: "))
+    print(temperature)
+    if temperature <= 55:
+        if temperature > 30:
+            print("It's Very Hot Day!")
+        elif temperature >= 25:
+            print("It's bit hot day!")
+        else:
+            print("Normal Day!")
+    else:
+        print("Invalid")
+    i = i + 1
+
+
+i = 1
+while i <= 3:
+    temperature = float(input("Enter current temperature: "))
+    print(temperature)
+    if temperature <= 55:
+        if temperature > 30:
+            print("It's Very Hot Day!")
+        elif temperature >= 25:
+            print("It's bit hot day!")
+        else:
+            print("Normal Day!")
+    else:
+        print("Invalid")
+    i = i + 1
+
+
+
+def cafe():
+    print("Tea is ready")
+    print("Enjoy your tea!")
+
+
+cafe()
+cafe()
+cafe()
+
+
+
+
+def add():
+    a = int(input("Enter first number "))
+    b = int(input("Enter second number "))
+    c = a + b
+    print(f"Sum is {c}")
+
+
+add()
+print("Ke cha khabar?")
+add()
+print("Sanchai chau?")
+add()
+print("Ke cha khabar?")

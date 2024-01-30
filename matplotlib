@@ -1,0 +1,82 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+a = np.array([1,5])
+b = np.array([2,15])
+plt.plot(a,b)
+plt.show()
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+a = np.array([1,5,9,8,7])
+b = np.array([2,15,3,2,11])
+plt.plot(a,b)
+plt.show()
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+a = np.array([1,5,7])
+b = np.array([2,15,19])
+plt.plot(a,b)
+plt.show()
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+a = np.array([1,5,7])
+b = np.array([2,15,19])
+c = np.array([2,21,11,33])
+plt.plot(a)
+plt.plot(b)
+plt.plot(c)
+plt.show()
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+a = np.array([1,5,7])
+b = np.array([2,15,19])
+plt.plot(a,b,marker='o')
+plt.show()
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+a = np.array([1,5,7])
+b = np.array([2,15,19])
+# plt.plot(a,b,marker='D')
+plt.plot(a,b,marker='o',ms = 20)
+plt.show()
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+a = np.array([1,5,7])
+b = np.array([2,15,19])
+# plt.plot(a,b,marker='D')
+plt.title("This is plot test")
+plt.xlabel('number of people')
+plt.ylabel('number of purchases')
+# plt.plot(a,b,marker='o',ms = 20, mfc = 'r', mec = 'k', linewidth =10 )
+# plt.plot(a,b,marker='o',ms = 20, mfc = 'r', mec = 'k', linewidth =10, linestyle = 'dashed' )
+# for i in range(33):
+#     plt.plot(a,b,marker='o',ms = i, mfc = 'r', mec = 'k', linewidth =i, linestyle = 'dotted',diagram = 'scattered' )
+#     # mfc marker face color
+#     # ms = marker size
+#     # mec marker edge color
+#     # plt.plot(a,b,marker='o',ms = 20, mfc = 'k')
+# plt.plot(a, b, marker='o', ms=12, mfc='r', mec='k', linewidth=3, linestyle='dotted')
+# plt.bar(a,b)
+plt.bar(a,b)
+plt.show()

@@ -1,0 +1,169 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(host="localhost",user="root",password="",db="studentinfo")
+if mydb:
+    print("Connected")
+else:
+    print("No connection")
+mycursor = mydb.cursor()
+# mycursor.execute("select * from student")
+# mycursor.execute("insert into student(name,age,mark)values('nita',20,71)")
+mycursor.execute("update student set mark=100 where name='sita'")
+# data = mycursor.fetchall()
+# print(data)
+mydb.commit()
+
+
+import mysql.connector
+
+mydb = mysql.connector.connect(host="localhost",user="root",password="",db="studentinfo")
+if mydb:
+    print("Connected")
+else:
+    print("No connection")
+mycursor = mydb.cursor()
+# mycursor.execute("select * from student")
+# mycursor.execute("insert into student(name,age,mark)values('nita',20,71)")
+mycursor.execute("update student set mark=100 where name='sita'")
+# data = mycursor.fetchall()
+# print(data)
+mydb.commit()
+
+
+
+
+class Student:
+    def infostudent(self):
+        print("This is inside Student")
+
+class Teacher:
+    def infoTeacher(self):
+        print("This is inside Teacher")
+
+s1 = Student()
+t1 = Teacher()
+s1.infostudent()
+t1.infoTeacher()
+
+
+
+
+class Student:
+    def infostudent(self):
+        print("This is inside Student")
+
+class Teacher:
+    def infoTeacher(self):
+        print("This is inside Teacher")
+
+t1 = Teacher()
+t1.infoTeacher()
+t1.infostudent()
+
+
+
+#####check
+class Student:
+    def infostudent(self):
+        print("This is inside Student")
+
+class Teacher:
+    def infoTeacher(self):
+        print("This is inside Teacher")
+    def infostudent(self):
+        print("This is inside Student")
+t1 = Teacher()
+t1.infoTeacher()
+t1.infostudent()
+
+
+
+
+class Student:
+    def infostudent(self):
+        print("This is inside Student")
+
+class FrontDesk:
+    def frontinfo(self):
+        print("This is front desk")
+
+class Teacher:
+    def infoTeacher(self):
+        print("This is inside Teacher")
+
+class Management(FrontDesk,Teacher):
+    def manageinfo(self):
+        print("This is mgmt block")
+
+
+m1 = Management()
+m1.manageinfo()
+m1.frontinfo()
+m1.infoTeacher()
+
+
+
+class Student:
+    def infostudent(self):
+        print("This is inside Student")
+
+class FrontDesk:
+    def frontinfo(self):
+        print("This is front desk")
+
+class Teacher(Student):
+    def infoTeacher(self):
+        print("This is inside Teacher")
+
+class Management(FrontDesk,Teacher):
+    def manageinfo(self):
+        print("This is mgmt block")
+
+
+m1 = Management()
+m1.manageinfo()
+m1.frontinfo()
+m1.infoTeacher()
+m1.infostudent()
+
+
+
+
+class Add:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+
+    def calc(self):
+        c = self.a + self.b
+        print(f"Sum is {c}")
+
+a1 = Add(22,33)
+a1.calc()
+
+
+class Add:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+
+    def calc(self):
+        c = self.a + self.b
+        print(f"Sum is {c}")
+
+a1 = Add(22,33)
+a1.calc()
+
+
+
+class Add:
+    def __init__(self,a1,b1):
+        self.a = a1
+        self.b = b1
+
+    def calc(self):
+        c = self.a + self.b
+        print(f"Sum is {c}")
+
+a1 = Add(22,33)
+a1.calc()

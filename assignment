@@ -1,0 +1,377 @@
+def list_handler(n1:int)->None:
+    '''
+    this function is used for taking user input regarding students
+    don't return any type
+    :parameter to be passed is int
+    :param n1: int
+    :return: None
+    '''
+    for i in range(n1):
+        temp_list = []
+        name = input("Enter name: ")
+        age = int(input("Enter age: "))
+        temp_list.append(name)
+        temp_list.append(age)
+        student_detail.append(temp_list)
+    print(student_detail)
+# name age address mark
+student_detail = []
+# student_detail = list()
+j = 1
+print(list_handler.__doc__)
+while j <= 5:
+    try:
+        n = int(input("Enter the total number of students: "))
+        list_handler(n)
+        break
+    except Exception as ex:
+        j+=1
+        print(ex.__doc__)
+        if j == 5:
+            print("You are not sharp minded sorry!")
+        if j == 6:
+            print("Ab kehi hudaina!")
+
+
+
+import csv
+
+def info_display():
+    with open('studentdetail.csv','r') as f:
+        data = csv.reader(f)
+        # print(data)
+        for i in data:
+            print(i)
+
+def list_handler(n1:int)->None:
+    '''
+    this function is used for taking user input regarding students
+    don't return any type
+    :parameter to be passed is int
+    :param n1: int
+    :return: None
+    '''
+    for i in range(n1):
+        temp_list = []
+        name = input("Enter name: ")
+        age = int(input("Enter age: "))
+        mark = float(input("Enter the mark: "))
+        temp_list.append(name)
+        temp_list.append(age)
+        temp_list.append(mark)
+        student_detail.append(temp_list)
+    print(student_detail)
+    # if open(filename):
+    #     print("Cha raicha")
+    # else:
+    #     print("naraicha")
+    # with open('studentdetail1pm.csv','x') as f:
+    #     writer = csv.writer(f)
+    #     writer.writerow(['name', 'age', 'mark'])
+    with open('studentdetail1pm.csv','a',newline='') as f:
+        writer = csv.writer(f)
+        writer.writerows(student_detail)
+    print(f.closed)
+
+
+# info_display()
+# name age address mark
+student_detail = []
+# student_detail = list()
+j = 1
+print(list_handler.__doc__)
+while j <= 5:
+    try:
+        n = int(input("Enter the total number of students: "))
+        list_handler(n)
+        break
+    except Exception as ex:
+        j+=1
+        print(ex.__doc__)
+        if j == 5:
+            print("You are not sharp minded sorry!")
+        if j == 6:
+            print("Ab kehi hudaina!")
+
+
+
+import csv
+
+def info_display():
+    with open('studentdetail1pm.csv','r') as f:
+        data = csv.reader(f)
+        # print(data)
+        for i in data:
+            print(i)
+
+def list_handler(n1:int)->None:
+    '''
+    this function is used for taking user input regarding students
+    don't return any type
+    :parameter to be passed is int
+    :param n1: int
+    :return: None
+    '''
+    for i in range(n1):
+        temp_list = []
+        name = input("Enter name: ")
+        age = int(input("Enter age: "))
+        mark = float(input("Enter the mark: "))
+        temp_list.append(name)
+        temp_list.append(age)
+        temp_list.append(mark)
+        student_detail.append(temp_list)
+    print(student_detail)
+    # if open(filename):
+    #     print("Cha raicha")
+    # else:
+    #     print("naraicha")
+    # with open('studentdetail1pm.csv','x') as f:
+    #     writer = csv.writer(f)
+    #     writer.writerow(['name', 'age', 'mark'])
+    with open('studentdetail1pm.csv','a',newline='') as f:
+        writer = csv.writer(f)
+        writer.writerows(student_detail)
+    print(f.closed)
+
+
+# info_display()
+# name age address mark
+student_detail = []
+# student_detail = list()
+j = 1
+# print(list_handler.__doc__)
+user_choice = input("Enter\nread for viewing data\nwrite for entering data: ")
+match user_choice:
+    case 'read':
+        info_display()
+    case 'write':
+        while j <= 5:
+            try:
+                n = int(input("Enter the total number of students: "))
+                list_handler(n)
+                break
+            except Exception as ex:
+                j+=1
+                print(ex.__doc__)
+                if j == 5:
+                    print("You are not sharp minded sorry!")
+                if j == 6:
+                    print("Ab kehi hudaina!")
+
+
+import csv
+
+def info_display():
+    with open('studentdetail1pm.csv','r') as f:
+        data = csv.reader(f)
+        # print(data)
+        for i in data:
+            print(i)
+
+def list_handler(n1:int)->None:
+    '''
+    this function is used for taking user input regarding students
+    don't return any type
+    :parameter to be passed is int
+    :param n1: int
+    :return: None
+    '''
+    for i in range(n1):
+        temp_list = []
+        name = input("Enter name: ")
+        age = int(input("Enter age: "))
+        mark = float(input("Enter the mark: "))
+        temp_list.append(name)
+        temp_list.append(age)
+        temp_list.append(mark)
+        student_detail.append(temp_list)
+    print(student_detail)
+    # if open(filename):
+    #     print("Cha raicha")
+    # else:
+    #     print("naraicha")
+    # with open('studentdetail1pm.csv','x') as f:
+    #     writer = csv.writer(f)
+    #     writer.writerow(['name', 'age', 'mark'])
+    with open('studentdetail1pm.csv','a',newline='') as f:
+        writer = csv.writer(f)
+        writer.writerows(student_detail)
+    print(f.closed)
+
+
+# info_display()
+# name age address mark
+student_detail = []
+# student_detail = list()
+j = 1
+# print(list_handler.__doc__)
+user_choice = input("Enter\nread for viewing data\nwrite for entering data:\nvisualize for data visualization\n")
+match user_choice:
+    case 'read':
+        info_display()
+    case 'write':
+        while j <= 5:
+            try:
+                n = int(input("Enter the total number of students: "))
+                list_handler(n)
+                break
+            except Exception as ex:
+                j+=1
+                print(ex.__doc__)
+                if j == 5:
+                    print("You are not sharp minded sorry!")
+                if j == 6:
+                    print("Ab kehi hudaina!")
+    case _:
+        print("Invalid")
+		
+		
+import csv
+import pandas as pd
+
+def data_vis_panda():
+    df = pd.read_csv("studentdetail1pm.csv")
+    print(df)
+
+
+def info_display():
+    with open('studentdetail1pm.csv','r') as f:
+        data = csv.reader(f)
+        # print(data)
+        for i in data:
+            print(i)
+
+def list_handler(n1:int)->None:
+    '''
+    this function is used for taking user input regarding students
+    don't return any type
+    :parameter to be passed is int
+    :param n1: int
+    :return: None
+    '''
+    for i in range(n1):
+        temp_list = []
+        name = input("Enter name: ")
+        age = int(input("Enter age: "))
+        mark = float(input("Enter the mark: "))
+        temp_list.append(name)
+        temp_list.append(age)
+        temp_list.append(mark)
+        student_detail.append(temp_list)
+    print(student_detail)
+    # if open(filename):
+    #     print("Cha raicha")
+    # else:
+    #     print("naraicha")
+    # with open('studentdetail1pm.csv','x') as f:
+    #     writer = csv.writer(f)
+    #     writer.writerow(['name', 'age', 'mark'])
+    with open('studentdetail1pm.csv','a',newline='') as f:
+        writer = csv.writer(f)
+        writer.writerows(student_detail)
+    print(f.closed)
+
+
+# info_display()
+# name age address mark
+student_detail = []
+# student_detail = list()
+j = 1
+# print(list_handler.__doc__)
+user_choice = input("Enter\nread for viewing data\nwrite for entering data:\nvisualize for data visualization\n")
+match user_choice:
+    case 'read':
+        info_display()
+    case 'write':
+        while j <= 5:
+            try:
+                n = int(input("Enter the total number of students: "))
+                list_handler(n)
+                break
+            except Exception as ex:
+                j+=1
+                print(ex.__doc__)
+                if j == 5:
+                    print("You are not sharp minded sorry!")
+                if j == 6:
+                    print("Ab kehi hudaina!")
+    case 'visualize':
+        data_vis_panda()
+    case _:
+        print("Invalid")
+		
+import csv
+import pandas as pd
+
+def data_vis_panda():
+    df = pd.read_csv("studentdetail1pm.csv")
+    print(df)
+    # print(df.plot())
+
+
+def info_display():
+    with open('studentdetail1pm.csv','r') as f:
+        data = csv.reader(f)
+        # print(data)
+        for i in data:
+            print(i)
+
+def list_handler(n1:int)->None:
+    '''
+    this function is used for taking user input regarding students
+    don't return any type
+    :parameter to be passed is int
+    :param n1: int
+    :return: None
+    '''
+    for i in range(n1):
+        temp_list = []
+        name = input("Enter name: ")
+        age = int(input("Enter age: "))
+        mark = float(input("Enter the mark: "))
+        temp_list.append(name)
+        temp_list.append(age)
+        temp_list.append(mark)
+        student_detail.append(temp_list)
+    print(student_detail)
+    # if open(filename):
+    #     print("Cha raicha")
+    # else:
+    #     print("naraicha")
+    # with open('studentdetail1pm.csv','x') as f:
+    #     writer = csv.writer(f)
+    #     writer.writerow(['name', 'age', 'mark'])
+    with open('studentdetail1pm.csv','a',newline='') as f:
+        writer = csv.writer(f)
+        writer.writerows(student_detail)
+    print(f.closed)
+
+
+# info_display()
+# name age address mark
+student_detail = []
+# student_detail = list()
+j = 1
+# print(list_handler.__doc__)
+user_choice = input("Enter\nread for viewing data\nwrite for entering data:\nvisualize for data visualization\n")
+match user_choice:
+    case 'read':
+        info_display()
+    case 'write':
+        while j <= 5:
+            try:
+                n = int(input("Enter the total number of students: "))
+                list_handler(n)
+                break
+            except Exception as ex:
+                j+=1
+                print(ex.__doc__)
+                if j == 5:
+                    print("You are not sharp minded sorry!")
+                if j == 6:
+                    print("Ab kehi hudaina!")
+    case 'visualize':
+        data_vis_panda()
+    case _:
+        print("Invalid")

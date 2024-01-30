@@ -1,0 +1,65 @@
+try:
+    f = open("test.txt",'r')
+    f.close()
+except Exception as ex:
+    print(ex)
+print("Test")
+
+
+
+try:
+    f = open("test.txt",'r')
+    f.close()
+except:
+    print("Error occurred")
+print("Test")
+
+
+
+try:
+    f = open("test.txt",'r')
+except Exception as ex:
+    print(ex)
+else:
+    f.close()
+finally:
+    print("This is file and try except")
+print("Test")
+
+
+try:
+    f_age = 22
+    s_age = 33
+    if f_age < s_age:
+        raise Exception("Bau chora ko age check gara")
+except Exception as ex:
+    print(ex)
+else:
+    print(f"father's age is {f_age} and son's age is {s_age}")
+finally:
+    print("age handler block you are into")
+print("Test")
+
+
+
+
+with open('test.txt') as f:
+    print(f.closed)
+    data = f.read()
+    print(data)
+print(f.closed)
+
+
+import csv
+with open("details.csv") as f:
+    data = csv.reader(f)
+    next(f)
+    for i in data:
+        print(i)
+		
+		
+import csv
+with open('details.csv') as f:
+    data = csv.reader(f)
+    for i in data:
+        print(type(i))

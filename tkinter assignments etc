@@ -1,0 +1,204 @@
+import tkinter as tk
+
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Student Detail Handler")
+master.mainloop()
+
+
+
+import tkinter as tk
+
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Student Detail Handler")
+tk.Label(master,text="Name").grid(row=0,column=0)
+tk.Label(master,text="Age").grid(row=1,column=1)
+tk.Label(master,text="Mark").grid(row=2,column=2)
+master.mainloop()
+
+import tkinter as tk
+
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Student Detail Handler")
+tk.Label(master,text="Name").grid(row=0,column=0)
+tk.Label(master,text="Age").grid(row=1,column=0)
+tk.Label(master,text="Mark").grid(row=2,column=0)
+master.mainloop()
+
+
+import tkinter as tk
+
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Student Detail Handler")
+tk.Label(master,text="Name",fg='red').grid(row=0,column=0)
+tk.Label(master,text="Age",bg='yellow').grid(row=1,column=0)
+tk.Label(master,text="Mark").grid(row=2,column=0)
+master.mainloop()
+
+
+import tkinter as tk
+
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Student Detail Handler")
+tk.Label(master,text="Name",fg='red',font=('Calibri',15)).grid(row=0,column=0)
+tk.Label(master,text="Age").grid(row=1,column=0)
+tk.Label(master,text="Mark").grid(row=2,column=0)
+master.mainloop()
+
+
+import tkinter as tk
+
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Student Detail Handler")
+tk.Label(master,text="Name",fg='red',font=('Arial',15,'bold','italic')).grid(row=0,column=0)
+tk.Label(master,text="Age",fg='red',font=('Arial',15,'bold')).grid(row=1,column=0)
+tk.Label(master,text="Mark",fg='red',font=('Arial',15,'bold')).grid(row=2,column=0)
+master.mainloop()
+
+
+
+import tkinter as tk
+
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Student Detail Handler")
+tk.Label(master,text="Name",fg='red',font=('Arial',15,'bold','italic')).grid(row=0,column=0)
+tk.Label(master,text="Age",fg='red',font=('Arial',15,'bold','italic')).grid(row=1,column=0)
+tk.Label(master,text="Mark",fg='red',font=('Arial',15,'bold','italic')).grid(row=2,column=0)
+
+e1 = tk.Entry(font=('Arial',15,'bold','italic'))
+e1.grid(row=0,column=1)
+e2 = tk.Entry(font=('Arial',15,'bold','italic'))
+e2.grid(row=1,column=1)
+e3 = tk.Entry(font=('Arial',15,'bold','italic'))
+e3.grid(row=2,column=1)
+master.mainloop()
+
+
+import tkinter as tk
+
+
+def submit_handler():
+    print("It has been clicked")
+
+
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Student Detail Handler")
+detail_font = ('Arial',15,'bold','italic')
+tk.Label(master,text="Name",fg='red',font= detail_font).grid(row=0,column=0)
+tk.Label(master,text="Age",fg='red',font=detail_font).grid(row=1,column=0)
+tk.Label(master,text="Mark",fg='red',font=detail_font).grid(row=2,column=0)
+
+e1 = tk.Entry(font=detail_font)
+e1.grid(row=0,column=1)
+e2 = tk.Entry(font=('Arial',15,'bold','italic'))
+e2.grid(row=1,column=1)
+e3 = tk.Entry(font=('Arial',15,'bold','italic'))
+e3.grid(row=2,column=1)
+
+btn1 = tk.Button(master,text="Submit",command=submit_handler).grid(row=3,column=2)
+
+master.mainloop()
+
+
+import tkinter as tk
+import csv
+
+def label_handler():
+    tk.Label(master, text="Name", fg='red', font=detail_font).grid(row=0, column=0)
+    tk.Label(master, text="Age", fg='red', font=detail_font).grid(row=1, column=0)
+    tk.Label(master, text="Mark", fg='red', font=detail_font).grid(row=2, column=0)
+
+def entry_handler():
+    global e1,e2,e3
+    e1 = tk.Entry(font=detail_font)
+    e1.grid(row=0, column=1)
+    e2 = tk.Entry(font=('Arial', 15, 'bold', 'italic'))
+    e2.grid(row=1, column=1)
+    e3 = tk.Entry(font=('Arial', 15, 'bold', 'italic'))
+    e3.grid(row=2, column=1)
+
+def btn_handler():
+    btn1 = tk.Button(master, text="Submit", command=submit_handler).grid(row=3, column=2)
+    btn2 = tk.Button(master, text="Cancel", command=master.quit()).grid(row=3, column=1)
+
+
+def submit_handler():
+    # print("It has been clicked")
+    name = e1.get()
+    age = e2.get()
+    mark = e3.get()
+    student_data = [name,age,mark]
+    print(f"Name: {name} Age: {age} Mark: {mark}")
+    with open("student_data.csv",'a',newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(student_data)
+
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Student Detail Handler")
+detail_font = ('Arial',15,'bold','italic')
+
+label_handler()
+entry_handler()
+btn_handler()
+
+master.mainloop()
+
+
+import tkinter as tk
+import csv
+
+def label_handler():
+    details = ['Name','Age','Mark']
+    for i in range(3):  #i=0 1 2
+        tk.Label(master, text=details[i], fg='red', font=detail_font).grid(row=i, column=0)
+        # tk.Label()
+    #
+    #
+    # tk.Label(master, text="Name", fg='red', font=detail_font).grid(row=0, column=0)
+    # tk.Label(master, text="Age", fg='red', font=detail_font).grid(row=1, column=0)
+    # tk.Label(master, text="Mark", fg='red', font=detail_font).grid(row=2, column=0)
+
+def entry_handler():
+    global e1,e2,e3
+    e1 = tk.Entry(font=detail_font)
+    e1.grid(row=0, column=1)
+    e2 = tk.Entry(font=('Arial', 15, 'bold', 'italic'))
+    e2.grid(row=1, column=1)
+    e3 = tk.Entry(font=('Arial', 15, 'bold', 'italic'))
+    e3.grid(row=2, column=1)
+
+def btn_handler():
+    btn1 = tk.Button(master, text="Submit", command=submit_handler).grid(row=3, column=2)
+    # btn2 = tk.Button(master, text="Cancel", command=master.quit).grid(row=3, column=1)
+    btn2 = tk.Button(master, text="Cancel", command=master.destroy).grid(row=3, column=1)
+
+
+def submit_handler():
+    # print("It has been clicked")
+    name = e1.get()
+    age = e2.get()
+    mark = e3.get()
+    student_data = [name,age,mark]
+    print(f"Name: {name} Age: {age} Mark: {mark}")
+    with open("student_data.csv",'a',newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(student_data)
+
+master = tk.Tk()
+master.geometry('700x250')
+master.title("Student Detail Handler")
+detail_font = ('Arial',15,'bold','italic')
+
+label_handler()
+entry_handler()
+btn_handler()
+
+master.mainloop()

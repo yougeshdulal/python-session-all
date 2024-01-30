@@ -1,0 +1,155 @@
+##########
+for i in range(1,5):
+    print(i)
+
+
+
+for i in range(1,12):
+    print("Question number",i)
+
+
+for i in range(1,10,2):
+    print("Question number",i)
+    print(type(i))
+
+
+result = int()
+# result = 0
+# print(result)
+for i in range(1,6):
+    result = result + i
+print("Total sum is", result)
+
+
+
+result = int()
+# result = 0
+# print(result)
+for i in range(1,6):
+    print(i)
+    result = result + i
+    print("Result at this point is",result)
+print("Total sum is", result)
+
+
+
+
+result = 1
+# result = 0
+# print(result)
+for i in range(1,7):
+    print(i)
+    result = result * i
+    # print("Result at this point is",result)
+print("Total Product is", result)
+
+
+result = 1
+num = int(input("Kasko factorial is needed? "))
+# result = 0
+# print(result)
+for i in range(1,num+1):
+    print(i)
+    result = result * i
+    # print("Result at this point is",result)
+print("Factorial of",num," is ",result)
+
+
+
+result = 1
+name = input("Enter your good name: ")
+num = int(input("Kasko factorial is needed? "))
+# result = 0
+# print(result)
+for i in range(1,num+1):
+    print(i)
+    result = result * i
+    # print("Result at this point is",result)
+print("Factorial of",num,"asked by",name," is ",result)
+
+
+
+result = 1
+name = input("Enter your good name: ")
+num = int(input("Kasko factorial is needed? "))
+for i in range(1,num+1):
+    print(i)
+    result = result * i
+print(f"Factorial of {num} asked by {name} is {result}")
+
+
+
+result = 1
+num = int(input("Enter upper limit "))
+for i in range(1,num+1):
+    if i == 15:
+        print("15 is there")
+    else:
+        print("15 is not there")
+		
+		
+result = 1
+num = int(input("Enter upper limit "))
+if 15 in range(1,num+1):
+    print("15 is there")
+	
+	
+result = 1
+num = int(input("Enter upper limit "))
+# status = True
+for i in range(1,num+1):
+    if i == 15:
+        print("15 is there")
+        break
+		
+		
+result = 1
+num = int(input("Enter upper limit "))
+for i in range(1,num+1):
+    if i == 15:
+        status = True
+        print("15 is there")
+        break
+    else:
+        status = False
+        # print("15 is not there")
+if status == False:
+    print("15 is not there")
+	
+result = 1
+num = int(input("Enter upper limit "))
+for i in range(1,num+1):
+    if i == 15:
+        status = True
+        print("15 is there")
+        break
+    else:
+        status = False
+        # print("15 is not there")
+if status is False:
+    print("15 is not there")
+	
+	
+result = 1
+num = int(input("Enter upper limit "))
+for i in range(1,num+1):
+    if i == 15:
+        status = True
+        print("15 is there")
+        break
+    else:
+        status = False
+        # print("15 is not there")
+if status is not True:
+    print("15 is not there")
+	
+# question 11
+sum_even = int()
+sum_odd = 0
+for i in range (1,6):
+    if i%2 == 0:
+        sum_even = sum_even + i
+    else:
+        sum_odd = sum_odd + i
+print(f"Sum of even numbers is {sum_even}")
+print(f"Sum of odd numbers is {sum_odd}")

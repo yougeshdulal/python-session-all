@@ -1,0 +1,191 @@
+#### str
+name = 'rshan'
+print(type(name))
+
+name = "rshan"
+print(name)
+print(type(name))
+
+
+name = '''rshan'''
+print(name)
+print(type(name))
+
+name = 'rshan'
+name = 'rsn'
+print(name)
+print(type(name))
+
+
+indexing []
+slicing 
+
+string ko first element jaile pani zeroth index bata start huncha
+
+name = 'rshan'
+print(name)
+print(name[0])
+print(name[1])
+print(name[2])
+
+#strings are immutable type
+
+name = 'rshan'
+print(name)
+a = len(name)
+print(f"string length is {a}")
+print(name[0])
+print(name[1])
+print(name[2])
+
+
+
+
+name = 'rshan stha'
+print(name)
+a = len(name)
+print(f"string length is {a}")
+
+
+name = 'rshan stha'
+print(name)
+# a = len(name)
+name = name.title()
+print(name)
+
+
+
+####
+name = 'rshan stha'
+print(name)
+# a = len(name)
+print(name.title())
+print(name)
+
+
+name = 'rshan stha'
+print(name)
+# a = len(name)
+print(name.title())
+print(name.upper())
+print(name)
+
+name = 'rshan stha'
+print(name)
+# a = len(name)
+print(name.title())
+print(name.upper())
+print(name.capitalize())
+print(name)
+
+
+
+name = 'rshan stha'
+print(name)
+# a = len(name)
+print(name.title())
+print(name.upper())
+print(name.capitalize())
+print(name.count('a'))
+print(name)
+
+
+
+
+name = 'rshan stha'
+print(name)
+# a = len(name)
+print(name.title())
+print(name.upper())
+print(name.capitalize())
+print(name.count('r'))
+print(name)
+
+
+name = 'rshan stha'
+print(name)
+# a = len(name)
+print(name.title())
+print(name.upper())
+print(name.capitalize())
+print(name.count('z'))
+print(name)
+
+
+
+
+
+name = 'rshanstha'
+print(name)
+# a = len(name)
+print(name.title())
+print(name.upper())
+print(name.capitalize())
+print(name.count('z'))
+print(name.isdigit())
+print(name)
+
+
+name = 'rshanstha'
+print(name)
+print(name.isdigit())
+print(name.isalpha())
+print(name.isalnum())
+print(name.islower())
+
+
+
+name = 'rshanstha'
+print(name[0:4])
+print(name[::])
+print(name[1:])
+
+
+name = 'rshanstha'
+print(name[0:4])
+print(name[::])
+print(name[0:8:2])  #rshanstha
+
+
+
+name = 'rshanstha'
+print(name[0:4])
+print(name[::])
+print(name[0::2])  #rshanstha
+print(name[-1])
+
+
+name = 'roshan '
+name1 = 'kathmandu'
+print(name+name1)
+print(name*2)
+
+
+
+
+while True:
+    choice = input("Enter add sub or exit: ")
+    match choice:
+        case 'add':
+            print("This is inside addition")
+        case 'sub':
+            print("This is sub block")
+        case 'exit':
+            exit()
+        case _:
+            print("Invalid")
+
+
+import random
+while True:
+    num = random.randint(1,5)
+    print(num,end='')
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.arange(15)
+print(x)
+x = np.arange(2,15)
+print(x)
+x = np.arange(2,15,3)
+print(x)
+
+import matplotlib.pyplot as plt
+import numpy as np
+names = ['ram','shyam','hari','nisha']
+age = [22,31,27,19]
+plt.plot(names,age)
+plt.xlabel('Names')
+plt.ylabel('Age')
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+names = ['ram','shyam','hari','nisha']
+age = [22,31,27,19]
+# plt.plot(names,age)
+plt.bar(names,age)
+plt.xlabel('Names')
+plt.ylabel('Age')
+plt.show()
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+names = ['ram','shyam','hari','nisha']
+age = [22,31,27,19]
+# plt.plot(names,age)
+plt.bar(names,age,color = 'r')
+plt.show()
+
+
+#####TRY IT OUT
+import matplotlib.pyplot as plt
+import numpy as np
+names = ['ram','shyam','hari','nisha']
+students_count = ['std1','std2','std3','std4']
+age = [22,31,27,19]
+u_colors = ['red','green','black','blue']
+# plt.plot(names,age)
+plt.bar(names,age,color = u_colors)
+plt.xticks(ticks=students_count)
+plt.show()
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+names = ['ram','shyam','hari','nisha']
+students_count = ['std1','std2','std3','std4']
+age = [22,31,27,19]
+u_colors = ['red','green','black','blue']
+# plt.plot(names,age)
+# plt.bar(names,age,color = u_colors)
+plt.pie(age)
+plt.show()
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+names = ['ram','shyam','hari','nisha']
+students_count = ['std1','std2','std3','std4']
+age = [22,31,27,19]
+u_colors = ['red','green','black','blue']
+# plt.plot(names,age)
+# plt.bar(names,age,color = u_colors)
+plt.pie(age,labels=names)
+plt.legend()
+plt.title("Student Details")
+plt.show()
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+names = ['ram','shyam','hari','nisha']
+students_count = ['std1','std2','std3','std4']
+age = [22,31,27,19]
+u_colors = ['red','green','black','blue']
+# plt.plot(names,age)
+# plt.bar(names,age,color = u_colors)
+ex_value = [0,0.2,0,0]
+plt.pie(age,labels=names, colors=u_colors, explode=ex_value)
+plt.pie(age,labels=names, colors=u_colors, explode=ex_value)
+plt.legend()
+plt.title("Student Details")
+plt.show()
+
+
+
+# import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
+
+names = ['ram','shyam','hari','nisha']
+age = [22,31,27,19]
+u_colors = ['red','green','black','blue']
+# plt.plot(names,age)
+# plt.bar(names,age,color = u_colors)
+ex_value = [0,0.2,0,0]
+# plt.pie(age,labels=names, colors=u_colors, explode=ex_value)
+plt.pie(age,labels=names, colors=u_colors, startangle=90,shadow=True)
+plt.legend(title = 'Names')
+plt.title("Student Details")
+plt.show()
+
+
